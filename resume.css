@@ -1,0 +1,119 @@
+body
+{
+    position: relative;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 20px;
+    font-family: 'Slabo', serif
+}
+
+p
+{
+    font-size: 15px;
+}
+
+header
+{
+    margin-bottom: 30px;
+}
+
+header > h1
+{
+    font-size: 50px;
+    font-family: 'Quattrocento', serif;
+}
+
+header > h2
+{
+    font-size: 25px;
+    font-family: 'Quattrocento', serif;
+}
+
+.contact-info
+{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+section
+{
+    margin-top: 20px;
+    position: relative;
+    padding-left: 130px;
+    padding-top: 5px;
+    border-top: 1px solid lightgray;
+}
+
+section:first-of-type
+{
+    border-top-width: 5px;
+    padding-top: 15px;
+}
+
+section > h1
+{
+    font-size: 20px;
+    font-style: italic;
+    position: absolute;
+    left: 0px;
+    width: 100px;
+}
+
+section > div
+{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section > div > h2
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section > div > h3
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+section.personnality
+{
+    display: flex;
+}
+
+section.personnality > div
+{
+    padding-right: 15px;
+}
+
+section.technical > ul
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(20px, auto);
+}
+
+section.experience p
+{
+    margin-top: 5px;
+}
+
+section.languages > ul
+{
+    display: flex;
+}
+
+section.languages > ul > li
+{
+    padding-right: 20px;
+}
+
+.timeframe
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
