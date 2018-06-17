@@ -3,5 +3,11 @@ body
     position: relative;
     width: 800px;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 0px;
+}
+
+@page
+{
+    margin: 1cm;
+    margin-bottom: 0cm;
 }
