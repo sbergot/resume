@@ -1,13 +1,9 @@
 body
 {
-    position: relative;
-    width: 800px;
-    margin-left: 20px;
-    margin-top: 0px;
+    margin-left: 10px;
 }
 
 @page
 {
-    margin: 1cm;
-    margin-bottom: 0cm;
+    margin: 0.6cm 1cm 0cm;
 }
