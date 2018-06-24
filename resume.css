@@ -1,12 +1,12 @@
 html
 {
     background-color: white;
-    --small-font-size: 15px;
-    --medium-font-size: 20px;
 }
 
 body
 {
+    --small-font-size: 15px;
+    --medium-font-size: 20px;
     position: relative;
     width: 880px;
     margin-left: 200px;
@@ -17,6 +17,7 @@ body
     font-size: var(--small-font-size);
     color: rgb(68, 68, 68);
     background-color: rgb(245, 245, 245);
+	width: 210mm;
 }
 
 a
@@ -59,7 +60,7 @@ p.profile
 
 section
 {
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     padding-left: 130px;
     padding-top: 5px;
@@ -142,4 +143,11 @@ section.languages > ul
 section.languages > ul > li
 {
     padding-right: 20px;
+	flex: auto;
+}
+
+section.languages > ul > li > .lang-level
+{
+	display: block;
+	font-style: italic;
 }
