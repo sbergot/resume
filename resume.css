@@ -161,7 +161,7 @@ section.languages > ul > li
 section.languages > ul > li > .lang-level
 {
     display: block;
-    font-style: italic;
+    color: var(--light-gray);
 }
 
 section.hobbies
