@@ -7,6 +7,8 @@ body
 {
     --small-font-size: 15px;
     --medium-font-size: 20px;
+    --light-gray: rgb(110, 110, 110);
+    --medium-gray: rgb(68, 68, 68);
     position: relative;
     width: 880px;
     margin-left: 200px;
@@ -15,13 +17,18 @@ body
     padding-right: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: var(--small-font-size);
-    color: rgb(68, 68, 68);
+    color: var(--medium-gray);
     width: 210mm;
 }
 
 a
 {
     color: rgb(153, 0, 3);
+}
+
+p
+{
+    color: var(--light-gray);
 }
 
 header
@@ -55,6 +62,7 @@ p.profile
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
+    color: var(--medium-gray);
 }
 
 section
@@ -129,9 +137,14 @@ section.experience p
     margin-top: 5px;
 }
 
-section.education span
+section.education .education-school
 {
-    font-size: var(--small-font-size);
+    font-weight: bold;
+}
+
+section.education h3
+{
+    color: var(--light-gray);
 }
 
 section.languages > ul
@@ -149,4 +162,9 @@ section.languages > ul > li > .lang-level
 {
     display: block;
     font-style: italic;
+}
+
+section.hobbies
+{
+    display: none;
 }

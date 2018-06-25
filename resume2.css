@@ -38,18 +38,13 @@ a
 
 header
 {
-    /* flex: 0 auto; */
-    /* order: 1; */
     position: absolute;
     top: 10px;
     width: 150mm;
-    /* padding-right: 20px; */
 }
 
 p.profile
 {
-    /* flex: 0 auto; */
-    /* order: 2; */
     position: absolute;
     top: 90px;
     width: 150mm;
@@ -155,15 +150,11 @@ section.projects
     position: absolute;
     top: 20px;
     left: calc(150mm + 40px);
-    /* margin-top: 20px; */
-    /* flex: 0 auto; */
-    /* order: 6; */
     width: 50mm;
 }
 
 section.technical
 {
-    /* margin-top: 20px; */
     flex: 0 auto;
     order: 7;
     width: 50mm;
