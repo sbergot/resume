@@ -1,6 +1,7 @@
 html
 {
     background-color: white;
+    padding-left: 200px;
 }
 
 body
@@ -11,19 +12,17 @@ body
     --medium-gray: rgb(68, 68, 68);
     position: relative;
     width: 880px;
-    margin-left: 200px;
     padding-top: 0px;
-    padding-left: 40px;
-    padding-right: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: var(--small-font-size);
     color: var(--medium-gray);
     width: 210mm;
-    height: 297mm;
+    height: calc(297mm - 190px);
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-    padding-top: 170px;
+    margin-top: 190px;
+    border-top: 5px solid lightgray;
 }
 
 p
@@ -39,14 +38,14 @@ a
 header
 {
     position: absolute;
-    top: 10px;
+    top: calc(10px - 190px);
     width: 150mm;
 }
 
 p.profile
 {
     position: absolute;
-    top: 90px;
+    top: calc(100px - 190px);
     width: 150mm;
     padding-right: 20px;
     margin-bottom: 30px;
@@ -54,6 +53,14 @@ p.profile
 
     color: var(--medium-gray);
     font-size: var(--medium-font-size);
+}
+
+.contact-info
+{
+    position: absolute;
+    top: calc(20px - 190px);
+    left: calc(150mm + 20px);
+    width: 50mm;
 }
 
 header > h1
@@ -143,14 +150,6 @@ section.projects
     width: 150mm;
     padding-right: 20px;
     margin-top: 20px;
-}
-
-.contact-info
-{
-    position: absolute;
-    top: 20px;
-    left: calc(150mm + 40px);
-    width: 50mm;
 }
 
 section.technical
