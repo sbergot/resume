@@ -16,7 +16,6 @@ body
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: var(--small-font-size);
     color: rgb(68, 68, 68);
-    background-color: rgb(245, 245, 245);
     width: 210mm;
 }
 
