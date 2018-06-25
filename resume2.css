@@ -1,0 +1,167 @@
+html
+{
+    background-color: white;
+}
+
+body
+{
+    --small-font-size: 15px;
+    --medium-font-size: 20px;
+    --light-gray: rgb(110, 110, 110);
+    --medium-gray: rgb(68, 68, 68);
+    position: relative;
+    width: 880px;
+    margin-left: 200px;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: var(--small-font-size);
+    color: var(--medium-gray);
+    /* background-color: rgb(245, 245, 245); */
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+p
+{
+    color: var(--light-gray);
+}
+
+header
+{
+    flex: 0 auto;
+    order: 1;
+    width: 150mm;
+    padding-right: 20px;
+}
+
+p.profile
+{
+    flex: 0 auto;
+    order: 2;
+    width: 150mm;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    color: var(--medium-gray);
+    font-size: var(--medium-font-size);
+}
+
+section.experience
+{
+    flex: 0 auto;
+    order: 3;
+    width: 150mm;
+    padding-right: 20px;
+}
+
+section.education
+{
+    flex: 0 auto;
+    order: 4;
+    width: 150mm;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+section.projects
+{
+    flex: 0 auto;
+    order: 5;
+    width: 150mm;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.contact-info
+{
+    margin-top: 20px;
+    flex: 0 auto;
+    order: 6;
+    width: 50mm;
+}
+
+section.technical
+{
+    margin-top: 20px;
+    flex: 0 auto;
+    order: 7;
+    width: 50mm;
+}
+
+section.languages
+{
+    margin-top: 20px;
+    flex: 0 auto;
+    order: 8;
+    width: 50mm;
+}
+
+header > h1
+{
+    font-size: 50px;
+    font-family: 'Quattrocento', serif;
+}
+
+header > h2
+{
+    font-size: 30px;
+    font-family: 'Quattrocento', serif;
+}
+
+p.profile
+{
+}
+
+.timeframe
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: var(--medium-font-size)
+}
+
+section h1
+{
+    font-size: var(--medium-font-size);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+section > div
+{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+section.experience h2
+{
+    font-weight: bold;
+}
+
+section.experience h3
+{
+    font-weight: bold;
+}
+
+section.experience > div
+{
+    margin-top: 20px;
+}
+
+section.experience > div:first-of-type
+{
+    margin-top: 0px;
+}
+
+section.languages > ul > li > .lang-level
+{
+    font-style: italic;
+    color: var(--light-gray);
+    margin-left: 3px;
+}
