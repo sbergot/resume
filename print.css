@@ -1,6 +1,11 @@
+html
+{
+    padding-left: 40px;
+}
+
 body
 {
-    margin-left: 10px;
+    margin-left: 0px;
     -webkit-print-color-adjust: exact;
 }
 

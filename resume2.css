@@ -10,9 +10,10 @@ body
     --medium-font-size: 20px;
     --light-gray: rgb(110, 110, 110);
     --medium-gray: rgb(68, 68, 68);
+    --right-section-width: 50mm;
     position: relative;
     width: 880px;
-    padding-top: 0px;
+    padding-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: var(--small-font-size);
     color: var(--medium-gray);
@@ -21,6 +22,7 @@ body
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
+    align-content: space-between;
     margin-top: 190px;
     border-top: 5px solid lightgray;
 }
@@ -156,7 +158,7 @@ section.technical
 {
     flex: 0 auto;
     order: 7;
-    width: 50mm;
+    width: var(--right-section-width);
 }
 
 section.languages
@@ -164,14 +166,12 @@ section.languages
     margin-top: 20px;
     flex: 0 auto;
     order: 8;
-    width: 50mm;
+    width: var(--right-section-width);
 }
 
 section.languages > ul > li > .lang
 {
     display: inline-block;
-    text-align: right;
-    width: 60px;
 }
 
 section.languages > ul > li > .lang-level
@@ -186,7 +186,7 @@ section.hobbies
     margin-top: 20px;
     flex: 0 auto;
     order: 9;
-    width: 50mm;
+    width: var(--right-section-width);
 }
 
 
