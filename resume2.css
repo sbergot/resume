@@ -6,13 +6,12 @@ html
 
 body
 {
+    --main-left-width: 150mm;
     --small-font-size: 15px;
     --medium-font-size: 20px;
     --light-gray: rgb(110, 110, 110);
     --medium-gray: rgb(68, 68, 68);
-    --right-section-width: 50mm;
     position: relative;
-    width: 880px;
     padding-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: var(--small-font-size);
@@ -41,7 +40,29 @@ header
 {
     position: absolute;
     top: calc(10px - 190px);
-    width: 150mm;
+    width: var(--main-left-width);
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-left
+{
+    width: var(--main-left-width);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-right
+{
+    width: calc(210mm - var(--main-left-width));
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 p.profile
@@ -77,6 +98,11 @@ header > h2
     font-family: 'Quattrocento', serif;
 }
 
+.withtimeframe
+{
+    position: relative;
+}
+
 section .timeframe
 {
     position: absolute;
@@ -89,20 +115,15 @@ section h1
 {
     font-size: var(--medium-font-size);
     font-style: italic;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
-section > div
+section > .experience-list
 {
-    position: relative;
-    margin-bottom: 10px;
-}
-
-section.experience
-{
+    display: flex;
+    flex-direction: column;
     flex: 0 auto;
-    order: 3;
-    width: 150mm;
+    gap: 10px;
     padding-right: 20px;
 }
 
@@ -116,23 +137,13 @@ section.experience h3
     font-weight: bold;
 }
 
-section.experience > div
+section > .education-list
 {
-    margin-top: 20px;
-}
-
-section.experience > div:first-of-type
-{
-    margin-top: 0px;
-}
-
-section.education
-{
+    display: flex;
+    flex-direction: column;
     flex: 0 auto;
-    order: 4;
-    width: 150mm;
+    gap: 5px;
     padding-right: 20px;
-    margin-top: 20px;
 }
 
 section.education .education-school
@@ -145,48 +156,16 @@ section.education h3
     color: var(--light-gray);
 }
 
-section.projects
-{
-    flex: 0 auto;
-    order: 5;
-    width: 150mm;
-    padding-right: 20px;
-    margin-top: 20px;
-}
-
-section.technical
-{
-    flex: 0 auto;
-    order: 7;
-    width: var(--right-section-width);
-}
-
-section.languages
-{
-    margin-top: 20px;
-    flex: 0 auto;
-    order: 8;
-    width: var(--right-section-width);
-}
-
 section.languages > ul > li > .lang
 {
     display: inline-block;
+    width: 60px;
 }
 
 section.languages > ul > li > .lang-level
 {
     font-style: italic;
     color: var(--light-gray);
-    margin-left: 3px;
-}
-
-section.hobbies
-{
-    margin-top: 20px;
-    flex: 0 auto;
-    order: 9;
-    width: var(--right-section-width);
 }
 
 
