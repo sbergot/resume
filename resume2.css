@@ -62,7 +62,7 @@ main
     width: calc(210mm - var(--main-left-width));
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 p.profile
@@ -168,12 +168,29 @@ section.languages > ul > li > .lang-level
     color: var(--light-gray);
 }
 
+section.technical
+{
+  li:not(:last-child)
+  {
+    margin-bottom: 5px;
+  }
+
+  .detail
+  {
+    font-style: italic;
+    color: var(--light-gray);
+  }
+}
+
 section.projects
 {
-    display: flex;
-    flex-direction: column;
-    flex: 0 auto;
-    gap: 16px;
+    & > div
+    {
+      display: flex;
+      flex-direction: column;
+      flex: 0 auto;
+      gap: 16px;
+    }
     
     h2
     {
