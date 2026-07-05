@@ -1,0 +1,6 @@
+* liens qui ne marchent pas
+* regrouper les expériences par boîtes
+* blocks de text à casser
+* running
+* The new process reduced the number of impacted clients from tens to less than two
+  => clarifier
