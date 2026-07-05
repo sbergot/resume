@@ -9,6 +9,11 @@ body
     -webkit-print-color-adjust: exact;
 }
 
+a[href^="mailto:"]
+{
+    word-break: break-all;
+}
+
 @page
 {
     margin: 0.6cm 1cm 0cm;
