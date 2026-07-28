@@ -76,12 +76,12 @@ p.profile {
   width: 50mm;
 }
 
-header>h1 {
+header > h1 {
   font-size: 50px;
   font-family: 'Quattrocento', serif;
 }
 
-header>h2 {
+header > h2 {
   font-size: 30px;
   font-family: 'Quattrocento', serif;
 }
@@ -126,6 +126,7 @@ section>.experience-list {
 
 section.experience h2 {
   font-weight: bold;
+  font-size: var(--medium-font-size);
 }
 
 section.experience h3 {
