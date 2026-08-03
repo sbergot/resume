@@ -17,11 +17,10 @@ body {
   width: 210mm;
   height: calc(297mm - 190px);
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
+  gap: 10px;
   justify-content: flex-start;
   align-content: space-between;
-  margin-top: 190px;
-  border-top: 5px solid lightgray;
 }
 
 p {
@@ -33,14 +32,17 @@ a {
 }
 
 header {
-  position: absolute;
-  top: calc(10px - 190px);
-  width: var(--main-left-width);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 main {
   display: flex;
   flex-direction: row;
+  border-top: 5px solid lightgray;
+  padding-top: 20px;
 }
 
 .main-left {
@@ -57,23 +59,10 @@ main {
   gap: 20px;
 }
 
-p.profile {
-  position: absolute;
-  top: calc(100px - 190px);
-  width: 150mm;
-  padding-right: 20px;
-  margin-bottom: 30px;
-  margin-top: 10px;
-
+.profile {
   color: var(--medium-gray);
   font-size: var(--medium-font-size);
-}
-
-.contact-info {
-  position: absolute;
-  top: calc(20px - 190px);
-  left: calc(150mm + 20px);
-  width: 50mm;
+  max-width: 600px;
 }
 
 header > h1 {
@@ -88,13 +77,15 @@ header > h2 {
 
 .withtimeframe {
   position: relative;
+  margin-top: 10px;
 }
 
 section .timeframe {
   position: absolute;
   right: 0px;
   top: 0px;
-  font-size: var(--medium-font-size)
+  font-size: var(--small-font-size);
+  font-weight: bold;
 }
 
 section h1 {
@@ -167,6 +158,10 @@ section.technical {
   .detail {
     font-style: italic;
     color: var(--light-gray);
+  }
+
+  .category {
+    font-weight: bold;
   }
 }
 

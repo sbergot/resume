@@ -1,6 +1,7 @@
 * liens qui ne marchent pas - ok
 * regrouper les expériences par boîtes - ok
-* blocks de text à casser
+* blocks de text à casser - ok
 * running - ok
 * The new process reduced the number of impacted clients from tens to less than two
   => clarifier
+  => ok
